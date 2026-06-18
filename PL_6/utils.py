@@ -10,16 +10,27 @@ def mostrar_bienvenida():
     """
     print("\n¡Bienvenido al programa de funciones!")
 
-    #Amir Sáenz
-    def calcular_operaciones(numero1, numero2):
-        """
-         Calcula el promedio de dos números.
-        Parámetros:
-        numero1 (float): Primer número.
-        numero2 (float): Segundo número.
-        Retorna:
-        float: Promedio de los números.
+#Amir Sáenz
+def calcular_operaciones(numero1, numero2):
+    """
+    Calcula el promedio de dos números.
+    Parámetros:
+      numero1 (float): Primer número.
+      numero2 (float): Segundo número.
+    Retorna:
+      float: Promedio de los números.
     """
     suma = numero1 + numero2
     promedio = suma/2
     return suma, promedio
+
+def validar_correo(correo):
+    """
+    Valida si una cadena tiene formato de correo electrónico.
+    Parámetros:
+        correo (str): Correo a validar.
+    Retorna:
+        bool: True si es válido, False si no lo es.
+    """
+    patron = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+    return bool(re.match(patron, correo))
