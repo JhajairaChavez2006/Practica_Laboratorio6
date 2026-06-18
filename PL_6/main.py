@@ -24,3 +24,27 @@ while True:
             num2 = float(input("Ingrese el segundo número: "))
 
             suma, promedio = calcular_operaciones(num1, num2)
+
+            print(f"La suma es: {suma}")
+            print(f"El promedio es: {promedio}")
+
+        except ValueError:
+            print("Error: Debe ingresar números válidos.")
+
+    elif opcion == "3":
+
+        correo = input("Ingrese un correo electrónico: ")
+
+        if validar_correo(correo):
+            print("Correo válido")
+        else:
+            print("Correo inválido")
+
+    elif opcion == "4":
+
+        print("Gracias por usar el programa.")
+        break
+
+    else:
+
+        print("Opción no válida. Intente nuevamente.")
