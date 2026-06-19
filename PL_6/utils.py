@@ -1,7 +1,8 @@
-# Funciones reutilizables del programa
+# --- Funciones reutilizables del programa ---
 
 import re
 
+# Función que muestra mensaje de bienvenida al usuario
 def mostrar_bienvenida():
     """
     Muestra un mensaje de bienvenida.
@@ -10,7 +11,7 @@ def mostrar_bienvenida():
     """
     print("\n¡Bienvenido al programa de funciones!")
 
-#Amir Sáenz
+# Función que realiza operaciones matemáticas básicas para calcular suma y promedio
 def calcular_operaciones(numero1, numero2):
     """
     Calcula el promedio de dos números.
@@ -24,6 +25,7 @@ def calcular_operaciones(numero1, numero2):
     promedio = suma/2
     return suma, promedio
 
+# Función para validar el formato de un correo electrónico
 def validar_correo(correo):
     """
     Valida si una cadena tiene formato de correo electrónico.
